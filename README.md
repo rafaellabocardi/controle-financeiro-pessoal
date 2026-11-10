@@ -50,3 +50,16 @@ Projeto de Software
 ## Status
 
 Em fase de levantamento de requisitos e planejamento.
+
+## Projeto (Aula 2)
+
+### Equipe e Recursos
+
+- **Equipe:** Rafaella Bocardi Vieira e Giovanna Amaro
+- **Recursos:** VS Code, Git/GitHub, Node.js, PostgreSQL/MySQL, Figma
+
+### Riscos e Ações Preventivas
+
+1. **Atrasos no cronograma:** Utilização de quadro Kanban para acompanhamento semanal.
+2. **Requisitos não claros:** Validação constante de protótipos com o orientador.
+3. **Falhas de segurança:** Uso de criptografia hash (`bcrypt`) para senhas e tokens JWT.
