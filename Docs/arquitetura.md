@@ -17,3 +17,21 @@ O sistema utiliza uma arquitetura em camadas composta por:
 - **Usuario:** id, nome, email, senhaHash | autenticar(), cadastrar()
 - **Lancamento:** id, descricao, valor, data, tipo | editar(), excluir()
 - **Categoria:** id, nome, tipo | listar()
+## Modelagem Orientada a Objetos (Aula 3)
+
+### Classes Centrais e Relacionamentos
+- **Usuario** (`id`, `nome`, `email`, `senhaHash`): `autenticar()`, `cadastrar()`, `atualizarPerfil()`
+- **Conta** (`id`, `nome`, `saldoAtual`, `tipo`): `atualizarSaldo()`, `consultarSaldo()`
+- **Lancamento** (`id`, `descricao`, `valor`, `data`, `tipo`): `registrar()`, `editar()`, `excluir()`
+- **Categoria** (`id`, `nome`, `tipo`): `listar()`, `criar()`
+- **MetaFinanceira** (`id`, `titulo`, `valorObjetivo`, `valorAtual`, `prazo`): `adicionarProgresso()`, `calcularPercentual()`
+
+**Relacionamentos:**
+- `Usuario` (1) -> (0..*) `Conta`
+- `Usuario` (1) -> (0..*) `Lancamento`
+- `Usuario` (1) -> (0..*) `MetaFinanceira`
+- `Conta` (1) -> (0..*) `Lancamento`
+- `Categoria` (1) -> (0..*) `Lancamento`
+
+### Manutenção Futura Prevista
+- **Manutenção Evolutiva:** Integração futura com APIs de Open Finance para importação automática de extratos bancários.
