@@ -49,7 +49,7 @@ Projeto de Software
 
 ## Status
 
-Em fase de levantamento de requisitos e planejamento.
+Concluído – Versão Final (v1.0-final) entregue.
 
 ## Projeto (Aula 2)
 
@@ -63,3 +63,13 @@ Em fase de levantamento de requisitos e planejamento.
 1. **Atrasos no cronograma:** Utilização de quadro Kanban para acompanhamento semanal.
 2. **Requisitos não claros:** Validação constante de protótipos com o orientador.
 3. **Falhas de segurança:** Uso de criptografia hash (`bcrypt`) para senhas e tokens JWT.
+## Instalação, Execução e Uso (v1.0-final)
+
+### Pré-requisitos e Dependências
+- **Node.js** (versão 18 ou superior).
+- Não requer instalação de dependências externas (`npm install`), utilizando apenas o módulo nativo `crypto`.
+
+### Como Executar e Rodar os Testes
+1. Clone o repositório:
+   ```bash
+  git clone [https://github.com/rafaellabocardi/controle-financeiro-pessoal.git](https://github.com/rafaellabocardi/controle-financeiro-pessoal.git)
